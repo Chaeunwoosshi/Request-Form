@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form</title>
+</head>
+<body>
+    <h1>Request a Drama, Movie, or Series</h1>
+    <form action="/submit-request" method="POST">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="type">Request Type:</label><br>
+        <select id="type" name="type" required>
+            <option value="drama">Drama</option>
+            <option value="movie">Movie</option>
+            <option value="series">Series</option>
+        </select><br><br>
+
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description" rows="4" cols="50" required></textarea><br><br>
+
+        <button type="submit">Submit Request</button>
+    </form>
+</body>
+</html>
